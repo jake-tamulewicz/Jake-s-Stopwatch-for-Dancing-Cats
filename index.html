@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jake's Stopwatch for Dancing Cats</title>
+<style>
+  /* Applying a tiled background image from the main folder */
+  body {
+    background: url('catbackground.gif') repeat;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  /* Creating a transparent dark background for the stopwatch */
+  .stopwatch-container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* White text color */
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  /* Styling the title of the stopwatch */
+  .stopwatch-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Styling for the timer display */
+  .timerDisplay {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  /* Styling the buttons for controlling the stopwatch */
+  .buttons button {
+    width: 120px;
+    height: 45px;
+    margin: 0 10px;
+    background-color: #205e94;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* Specific styles for the Pause and Reset buttons to have different colors */
+  .buttons #pauseTimer {
+    background-color: #d23332;
+  }
+
+  .buttons #resetTimer {
+    background-color: #20b380;
+  }
+</style>
+</head>
+<body>
+  <!-- Stopwatch container for holding all stopwatch elements -->
+  <div class="stopwatch-container">
+    <!-- Title of the stopwatch -->
+    <div class="stopwatch-title">Jake's Stopwatch for Dancing Cats</div>
+    <!-- The timer display where the stopwatch time will be shown -->
+    <div class="timerDisplay">
+      00 : 00 : 00 : 000
+    </div>
+    <!-- Container for the control buttons -->
+    <div class="buttons">
+      <!-- Button to start the stopwatch -->
+      <button id="startTimer">Start</button>
+      <!-- Button to pause the stopwatch -->
+      <button id="pauseTimer">Pause</button>
+      <!-- Button to reset the stopwatch -->
+      <button id="resetTimer">Reset</button>
+    </div>
+  </div>
+
+  <!-- Linking the JavaScript file for the stopwatch logic -->
+  <script src="stopwatch.js"></script>
+</body>
+</html>
